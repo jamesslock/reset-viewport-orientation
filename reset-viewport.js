@@ -16,7 +16,5 @@ var forceReflow = function(elem) {
 };
 
 window.addEventListener('orientationchange', function() {
-  setTimeout(function() {
-    forceReflow();
-  }, 50);
+  forceReflow();
 });
